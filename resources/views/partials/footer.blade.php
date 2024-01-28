@@ -1,4 +1,5 @@
 <footer>
+    @include('partials.quickLinks')
     <div id="jumbo-footer" class="w-100">
         <div class="wrapper footer d-flex align-items-center position-relative py-5">
             <div class="text-container h-100">
