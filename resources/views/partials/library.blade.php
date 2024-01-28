@@ -10,7 +10,7 @@
             <div class="square-card">
                 <img class="w-100" src="{{$comic['thumb']}}" alt="">
             </div>
-            <h5 class="mt-3">{{$comic['series']}}</h5>
+            <h5 class="mt-3">{{$comic['title']}}</h5>
         </div>  
         @endforeach
     </div>
