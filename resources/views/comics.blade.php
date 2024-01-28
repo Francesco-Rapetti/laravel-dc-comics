@@ -3,22 +3,25 @@
 @section('main')
     <div class="wrapper">
         <div id="card-container" class="">
-            @foreach ($comics as $comic)
+            @foreach ($comics as $key => $comic)
             <div class="d-flex my-5">
                 <div class="square-card me-3 w-25">
                     <img class="w-100" src="{{$comic['thumb']}}" alt="">
                 </div>
                 <div class="w-75">
-                    <h1 class="mt-3">{{$comic['series']}}</h1>
+                    <h1 class="mt-3">{{$comic['title']}}</h1>
                     <div>
-                        @foreach ($comic as $key => $value)
-                            @if ($loop->first)
-                                
-                            @else 
-                                <h5>{{ $key }}</h5>
-                                <p>{{ $value }}</p>
-                            @endif
-                        @endforeach
+                        <h5>SERIE</h5>
+                        <p>{{ $comic['series'] }}</p>
+
+                        <h5>DESCRIZIONE</h5>
+                        <p>{{ $comic['description'] }}</p>
+
+                        <h5>DATA DI USCITA</h5>
+                        <p>{{ $comic['sale_date'] }}</p>
+
+                        <h5>PREZZO</h5>
+                        <p>{{ $comic['price'] }}</p>
                     </div>
                 </div>
             </div>  
