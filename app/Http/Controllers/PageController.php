@@ -14,10 +14,10 @@ class PageController extends Controller
         return view("home", config("data"), compact("comics"));
     }
 
-    public function comics()
-    {
-        $dati = config("data");
-        $comics = Comic::all();
-        return view("comics", config("data"), compact("comics"));
-    }
+    // public function comics()
+    // {
+    //     $dati = config("data");
+    //     $comics = Comic::all();
+    //     return view("comics", config("data"), compact("comics"));
+    // }
 }

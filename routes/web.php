@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ComicController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +17,6 @@ use App\Http\Controllers\PageController;
 
 Route::get('/', [PageController::class, "index"])->name("home");
 
-Route::get('/comics', [PageController::class, "comics"])->name("comics");
+// Route::get('/comics', [PageController::class, "comics"])->name("comics");
+
+Route::resource('comics', ComicController::class);
