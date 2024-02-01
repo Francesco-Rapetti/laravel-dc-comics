@@ -7,7 +7,7 @@ return [
             'title' => 'CHARACTERS'
         ],
         'link2' => [
-            'url' => 'comics',
+            'url' => 'comics.index',
             'title' => 'COMICS'
         ],
         'link3' => [
@@ -77,7 +77,7 @@ return [
                 ],
                 "link2" => [
                     "name" => "Comics",
-                    "link" => "comics"
+                    "link" => "comics.index"
                 ],
                 "link3" => [
                     "name" => "Movies",

@@ -24,7 +24,7 @@
                     @foreach ($links as $link)
                         <li class="nav-item fw-bold header-link">
                             <!-- Individual Navbar Link -->
-                            <a aria-current="page" class="{{ $link['url'] == request()->path() ? 'active' : '' }}" href="{{ $link['url'] != '#' ? $link['url'] : '#' }}">{{ $link['title'] }}</a>
+                            <a aria-current="page" class="{{ str_contains(Route::currentRouteName(), getPageName($link['url'])) ? 'active' : '' }}" href="{{ $link['url'] != '#' ? route($link['url']) : '#' }}">{{ $link['title'] }}</a>
                         </li>
                     @endforeach
                 </ul>
