@@ -6,7 +6,7 @@
             <a class="d-flex align-items-center" href="#">
                 <div>
                     <!-- Display the image -->
-                    <img class="w-100 link-img" src="{{ $link['img'] }}" alt="{{ $link['text'] }}">
+                    <img class="w-100 link-img" src="{{ url($link['img']) }}" alt="{{ $link['text'] }}">
                 </div>
                 <!-- Display the link text -->
                 <span class="ms-3">{{ $link['text'] }}</span>

@@ -38,7 +38,7 @@
                 <!-- Loop through the socials array -->
                 @foreach ($socials as $social)
                     <a href="{{ $social['link'] != '#' ? route($social['link']) : '#' }}">
-                        <img class="social" src="{{ $social['img'] }}" alt="{{ $social['img'] }}">
+                        <img class="social" src="{{ url($social['img']) }}" alt="{{ $social['img'] }}">
                     </a>
                 @endforeach
             </div>
