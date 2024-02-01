@@ -2,12 +2,12 @@
 
 @section('main')
     <div class="wrapper">
-        <div id="card-container" class="">
-            <div class="d-flex my-5">
-                <div class="square-card me-3 w-25">
+        <div class="container">
+            <div class="row my-5 justify-content-center">
+                <div class="col-12 col-md-6 w-25 square-card me-3">
                     <img class="w-100" src="{{$comic['thumb']}}" alt="">
                 </div>
-                <div class="w-75">
+                <div class="col-12 col-md-6 text-center">
                     <h1 class="mt-3">{{$comic['title']}}</h1>
                     <div>
                         <h5>SERIE</h5>
