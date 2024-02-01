@@ -3,10 +3,12 @@
 @section('main')
     <div class="wrapper">
         <div id="card-container" class="">
-            @foreach ($comics as $key => $comic)
+            @foreach ($comics as $comic)
             <div class="d-flex my-5">
                 <div class="square-card me-3 w-25">
-                    <img class="w-100" src="{{$comic['thumb']}}" alt="">
+                    <a href="comics/{{ $comic['id'] }}">
+                        <img class="w-100" src="{{$comic['thumb']}}" alt="">
+                    </a>
                 </div>
                 <div class="w-75">
                     <h1 class="mt-3">{{$comic['title']}}</h1>
