@@ -38,7 +38,7 @@
     </a>
 
     <style>
-        * {
+        body {
             color: white;
         }
 

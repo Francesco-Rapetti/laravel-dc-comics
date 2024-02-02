@@ -22,7 +22,7 @@
 </div>
 
 <style>
-    * {
+    body {
         color: white;
     }
 

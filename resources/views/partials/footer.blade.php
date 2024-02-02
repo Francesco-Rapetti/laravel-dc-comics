@@ -48,7 +48,7 @@
 
 <style scoped>
     /* Set the color of all elements to white */
-    * {
+    body {
         color: white;
     }
     
