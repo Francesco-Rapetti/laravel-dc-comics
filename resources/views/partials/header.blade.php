@@ -61,7 +61,7 @@
     }
 
     /* Styles for the unordered list */
-    ul {
+    ul.navbar-nav {
         gap: 30px !important;
         height: 100% !important;
     }

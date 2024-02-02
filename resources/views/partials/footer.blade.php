@@ -9,7 +9,7 @@
                     <div class="me-5">
                         <!-- Render the title of the item -->
                         <h4>{{ $item['title'] }}</h4>
-                        <ul>
+                        <ul id="ul-footer-links">
                             <!-- Iterate over each link in the links array of the current item -->
                             @foreach ($item['links'] as $link)
                             <li>
@@ -81,7 +81,7 @@
     }
     
     /* Styling for unordered lists */
-    ul {
+    ul#ul-footer-links {
         list-style-type: none;
         padding: 0;
     }
