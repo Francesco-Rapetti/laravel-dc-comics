@@ -33,10 +33,23 @@
     <div class="d-flex justify-content-center mb-4">
         <button class="btn btn-primary rounded-0 fw-bold">LOAD MORE</button>
     </div>
+    <a id="add-comic" class="btn btn-primary d-flex align-items-center justify-content-center" href="{{ route('comics.create') }}">
+        <i class="fa-solid fa-plus fs-3"></i>
+    </a>
 
     <style>
         * {
             color: white;
+        }
+
+        #add-comic {
+            width: 70px!important;
+            height: 70px!important;
+            padding: 0;
+            position: fixed;
+            z-index: 999;
+            bottom: 30px;
+            right: 30px;
         }
     
         .square-card {
