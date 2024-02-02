@@ -29,6 +29,33 @@
     <div class="d-flex justify-content-center mb-4 gap-3">
         <a class="btn btn-primary rounded-0 fw-bold" href="{{ route('comics.index') }}">ALL COMICS</a>
         <a class="btn btn-warning rounded-0 fw-bold" href="{{ route('comics.edit', $comic['id']) }}">EDIT</a>
-        <a class="btn btn-danger rounded-0 fw-bold" href="{{ route('comics.destroy', $comic['id']) }}">DELETE</a>
+        <form action="{{ route('comics.destroy', $comic['id']) }}" method="POST">
+            @csrf
+            @method('DELETE')
+            <!-- Button trigger modal -->
+        <button type="button" class="btn btn-danger rounded-0 fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            DELETE
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content text-dark rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="warningTitle">WARNING</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure you want to delete {{ $comic['title'] }}?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary rounded-0 fw-bold" data-bs-dismiss="modal">DISCARD</button>
+                        <input id="deleteBtn" class="btn btn-danger rounded-0 fw-bold" type="submit" value="DELETE">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+        
     </div>
 @endsection
