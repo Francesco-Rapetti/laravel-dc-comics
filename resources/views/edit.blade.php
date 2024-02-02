@@ -37,7 +37,7 @@
 
                   <div class="mb-3">
                     <label for="dateInput" class="form-label">Sale date</label>
-                    <input type="text" class="form-control" id="dateInput" name="sale_date" value="{{ $comic['sale_date']}}">
+                    <input type="text" class="form-control" id="dateInput" name="sale_date" placeholder="YYYY-MM-DD" value="{{ $comic['sale_date']}}">
                   </div>
 
                   <div class="mb-3">
