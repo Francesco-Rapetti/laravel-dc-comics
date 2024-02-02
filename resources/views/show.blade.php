@@ -26,7 +26,9 @@
             </div>  
         </div>
     </div>
-    <div class="d-flex justify-content-center mb-4">
-        <button class="btn btn-primary rounded-0 fw-bold">LOAD MORE</button>
+    <div class="d-flex justify-content-center mb-4 gap-3">
+        <a class="btn btn-primary rounded-0 fw-bold" href="{{ route('comics.index') }}">ALL COMICS</a>
+        <a class="btn btn-warning rounded-0 fw-bold" href="{{ route('comics.edit', $comic['id']) }}">EDIT</a>
+        <a class="btn btn-danger rounded-0 fw-bold" href="{{ route('comics.destroy', $comic['id']) }}">DELETE</a>
     </div>
 @endsection
